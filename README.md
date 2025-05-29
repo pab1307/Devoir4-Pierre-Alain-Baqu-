@@ -54,16 +54,3 @@ Toutes les fonctionnalités sont codées.
 Ajout d'une fenêtre d'authentification pour limiter l'accès aux développeurs ayant le profil 'admin'.<br>
 Voici le nouveau diagramme de paquetage, avec en plus, la classe Admin dans model et la classe FrmAuthentification dans view :<br>
 ![3-diagramme_de_paquetages_S4](https://github.com/CNED-SLAM/Habilitations/assets/100127886/9b086d26-df1a-488c-9c78-d7caa0464ca5)
-
-### Commit "Phase 4 : Contrôle du pwd"
-Vérification du format du pwd (entre 8 et 30 caractères, contenant au moins une minuscule, une majuscule, un chiffre, un caractère spécial et pas d'espace.
-La méthode PwdFort contient des erreurs volontaires car il est demandé aux étudiants de consulte l'issue mentionnant les problèmes rencontrés et de faire des propositions de pull request.
-### Commit "Phase 5 : Gestion des logs"
-Journalisation avec Serilog dans les classes du paquetage dal (accès aux données).
-Attention, les erreurs dans la méthode PwdFort ajoutées dans le commit précédent, ne sont pas encore corrigées. Elles le seront dans le commit suivant.
-### Commit "Phase 6 : qualité de code (SonarQube), transfert chaine de connexion dans App.config."
-Code corrigé et optimisé avec les alertes de Sonarlint en local et les signalements sur le serveur SonarQube (en particulier au niveau sécurité, d'où le transfert de la chaîne de connexion dans le fichier App.config).
-### Commit "Phase 7 : tests sur classes des packages model et dal (avec accès à la BDD)"
-Tests unitaires sur les classes du package 'model'. Tests d'intégration sur les classes du package 'dal' qui accèdent à la BDD.
-### Commit "Phase 8 : ajout de fonctionnalités avec 'tests firsts'"
-Ecriture des tests unitaires avant l'écriture des méthodes correspondantes à tester.
